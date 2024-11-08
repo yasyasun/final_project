@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Яна — веб-разработчик</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" type="image/png" href="../image/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../image/favicon.svg" />
+    <link rel="shortcut icon" href="../image/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png" />
+    <link rel="manifest" href="../image/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../about/about.html">Обо мне</a></li>
+            <li><a href="../portfolio/potrfolio.html">Портфолио</a></li>
+            <li><a href="../game_frontend/game.html">Игра крестики-нолики</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-form">
+        <h2>Оставить заявку на сотрудничество</h2>
+        <form
+          action="send_contact.php"
+          method="POST"
+          id="contactForm"
+          target="_blank"
+        >
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="contact-header">
+        <h1>Свяжитесь со мной</h1>
+        <p>Я всегда готова к новым проектам и сотрудничеству!</p>
+        <p>Вы можете оставить заявку или связаться напрямую по контактам ниже.</p>
+      </section>
+
+      <section class="contact-info">
+        <div class="contact-item">
+          <h2>Почта</h2>
+          <p>
+            <a class="contact__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h2>Telegram</h2>
+          <p>
+            <a class="contact__link" href="https://t.me/yasyasun" target="_blank">@yasyasun</a>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Iana S. Все права защищены.</p>
+    </footer>
+  </body>
+</html>

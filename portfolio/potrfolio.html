@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Яна — веб-разработчик</title>
+    <script src="potrfolio.js" defer></script>
+    <link rel="stylesheet" href="potrfolio.css" />
+    <link rel="icon" type="image/png" href="../image/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../image/favicon.svg" />
+    <link rel="shortcut icon" href="../image/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png" />
+    <link rel="manifest" href="../image/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="../index.html">Главная</a></li>
+            <li><a href="../about/about.html">Обо мне</a></li>
+            <li><a href="../contacts/contact.html">Контакты</a></li>
+            <li><a href="../game_frontend/game.html">Игра крестики-нолики</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Проекты -->
+    <section id="projects">
+      <h2>Проекты</h2>
+      <div class="project">
+        <h3>Проект 1: Сайт-портфолио</h3>
+        <p>Задача: Разработка веб-сайта</p>
+        <p>Технологии: HTML, CSS, PHP, JavaScript</p>
+        <p>Вклад: Разработала фронтенд и бэкенд</p>
+      </div>
+      <div class="project">
+        <h3>Проект 2: Телеграм-бот для турфирмы</h3>
+        <p>
+          Задача: Создание телеграм-бота, который позволяет
+          найти выгодное предложение на платформе Hotels.com 
+          в режиме реального времени
+        </p>
+        <p>Технологии: Python, Peewwe, API</p>
+        <p>Вклад: Полноценная разработка бота</p>
+      </div>
+      <div class="project">
+        <h3>Проект 3: Сайт для интернет-магазина</h3>
+        <p>
+          Задача: Работала над веб-сайтом,  интегрированный с API
+          для взаимодействия с frontend
+        </p>
+        <p>Технологии: Python, Django, DRF, SQLIte, Swagger, API</p>
+        <p>Вклад: Backend-разработка</p>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>HTML - начальный</li>
+        <li>CSS - начальный</li>
+        <li>JavaScript - начальный</li>
+        <li>PHP - начальный</li>
+        <li>Python - средний</li>
+        <li>SQL - средний</li>
+        <li>Git - средний</li>
+        <li>Английский язык - B1</li>
+      </ul>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
+      <h2>Задать вопрос</h2>
+      <form id="contactForm" action="submit.php" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error" id="emailError"></span>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <section class="footer__section footer__section--contacts">
+        <p>Email: <a class="footer__link" href="mailto:yana_sun_@mail.ru">yana_sun_@mail.ru</a></p>
+        <p>Telegram: <a class="footer__link" href="https://t.me/yasyasun" target="_blank">@yasyasun</a></p>
+        <p class="footer__text">&copy; 2024 Iana S.</p>
+      </section>
+    </footer>
+
+  </body>
+</html>
